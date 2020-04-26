@@ -1,0 +1,113 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+
+/****************************************
+*               Variables               *
+*****************************************/
+:root{
+  --var-primary: #308ee0;
+  --var-white: #eaf5ff;
+  --var-primary-glow: 2px 2px 10px var(--var-primary);
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0.5;
+  margin-bottom: 5em;
+  padding: 1;
+}
+
+#messages li {
+  font-family: 'Baloo Bhaina 2', cursive;
+  max-width: 50vw;
+  width: max-content;
+  margin: 0.5em;
+  padding: 5px 10px;
+  border-radius: 15px 25px;
+  background: rgb(214, 214, 214);
+  word-wrap: break-word;
+}
+
+#messages li:nth-child(odd) {
+  border-radius: 25px 15px;
+  background: #eee;
+}
+
+#sign-users{
+  display: none;
+}
+
+#sign-activity{
+  display: none;
+}
+
+#chat-room{
+  display: none;
+}
+
+/* Login page styles*/
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Login Page */
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .title {
+  font-size: 200%;
+}
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+.title{
+  font-size: 200%;
+  font-family: 'Major Mono Display', monospace;
+  
+  color: var(--var-white);
+  text-shadow: var(--var-primary-glow);
+}
